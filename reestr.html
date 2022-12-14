@@ -1,0 +1,35 @@
+<html><head>
+    <title>Реестр хомячков</title>
+</head>
+<body>
+    Задание №3
+    <script>
+        //alert("сообщение")
+        //let a = confirm("сообщение с отменой")                      // принимает 1 или 0
+        //prompt("сообщение с вводом", "ввод")                            
+        alert("Добро пожаловать в мастер создания реестров хомячков")
+        let st = true;
+        let m = new Array();
+        let c = 0;
+        
+        while (st != false)
+        {
+            if (c < 10)
+            {
+                let p = prompt("Вид хомяка?", "порода не определена");
+                let k = prompt("Кличка?", "Василий");
+                let year = prompt("Год рождения?", "2017");
+                console.log(v +"; " + p +"; " + k +"; " + year +"; "+ "Возраст:" + (2022 - Number(year)) + "года")
+                st = !(confirm("Завершим?"))
+                c++;
+            }
+            else 
+            {
+                alert("В реестре хомячков кончились места");
+                st = false;
+            }
+        }
+        
+        
+    </script>   
+</body></html>
